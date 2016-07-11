@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Google Phone Gallery</title>
+    <style type="text/css">ul>p:last-child {font-weight:bold;bottom-margin:5px;}</style>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
+    <script src="phone-list.component.js"></script>
   </head>
-  <body ng-controller="PhoneListController">
+  <body>
 
-    <ul>
-      <li ng-repeat="phone in phones">
-        <span>{{phone.name}}</span>
-        <p>{{phone.snippet}}</p>
-      </li>
-    </ul>
-    <p>Hello, {{name}}!</p>
+  <!-- Use a custom component to render a list of phones -->
+  <p><phone-list></phone-list></p>
+  <p><phone-list></phone-list></p>
+  <p><phone-list></phone-list></p>
+  
   </body>
 </html>

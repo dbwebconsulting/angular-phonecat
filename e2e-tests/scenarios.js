@@ -22,7 +22,7 @@ describe('PhoneCat Application', function() {
 
       query.clear();
       query.sendKeys('motorola');
-      expect(phoneList.count()).toBe(2);
+      expect(phoneList.count()).toBe(2); 
     });
 
   });

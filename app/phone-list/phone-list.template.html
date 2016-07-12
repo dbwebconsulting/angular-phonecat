@@ -12,7 +12,7 @@
                 sort by:
                 <select ng-model="$ctrl.orderProp">
                     <option value="name">Alphabetical</option>
-                    <option value="age">Newest</option>
+                    <option value="-age">Oldest</option>
                 </select>
             </p>
             
@@ -28,7 +28,7 @@
                 <p>Total number of phones: {{$ctrl.phones.length}}</p>
             </ul>
             <p>Current value of the query: {{$ctrl.query}}</p>
-        
+            <p>Current value of orderProp: {{$ctrl.orderProp}}</p>
         </div>
     </div>
 </div>

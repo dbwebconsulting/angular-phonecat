@@ -10,8 +10,8 @@ angular.module('phoneList').component('phoneList', {
       self.orderProp = 'age';
 
       $http.get('phones/phones.json').then(function (response) {
-        //self.phones = response.data;
-        self.phones = response.data.slice(0, 5); // limit to first 5 phones
+        self.phones = response.data;
+        //self.phones = response.data.slice(0, 5); // limit to first 5 phones
       });
     }
   ]

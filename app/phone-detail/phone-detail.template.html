@@ -1,12 +1,13 @@
-<img ng-src="{{$ctrl.phone.images[0]}}"  title="{{$ctrl.phone.name}}" class="phone" />
+<img ng-src="{{$ctrl.mainImageUrl}}" title="{{$ctrl.phone.name}}" class="phone" />
 
 <h1>{{$ctrl.phone.name}}</h1>
 
 <p>{{$ctrl.phone.description}}</p>
 
+<p class="thumbnail-msg">{{$ctrl.message}}&nbsp;</p>
 <ul class="phone-thumbs">
   <li ng-repeat="img in $ctrl.phone.images">
-    <img ng-src="{{img}}" />
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" ng-mouseover="$ctrl.onMouseover(img)" ng-mouseleave="$ctrl.onMouseleave(img)" />
   </li>
 </ul>
 

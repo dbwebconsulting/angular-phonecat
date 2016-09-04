@@ -51,6 +51,7 @@ h1 {
 .phone-thumbs li {
   background-color: white;
   border: 1px solid black;
+  cursor: pointer;
   display: inline-block;
   margin: 1em;
 }
@@ -79,3 +80,9 @@ h1 {
 
 .red { color: red; }
 .green { color: green; }
+
+.thumbnail-msg {
+  font-weight: bold;
+  font-style: italic;
+  color: darkred;
+}

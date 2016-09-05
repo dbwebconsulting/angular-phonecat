@@ -1,5 +1,8 @@
-<img ng-src="{{$ctrl.mainImageUrl}}" title="{{$ctrl.phone.name}}" class="phone" />
-
+<div class="phone-images">
+  <img ng-src="{{img}}" class="phone"
+       ng-class="{selected: img === $ctrl.mainImageUrl}"
+       ng-repeat="img in $ctrl.phone.images" title="{{$ctrl.phone.name}}" />
+</div>
 <h1>{{$ctrl.phone.name}}</h1>
 
 <p>{{$ctrl.phone.description}}</p>

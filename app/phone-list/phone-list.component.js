@@ -1,3 +1,4 @@
+/*jslint white: true */
 'use strict';
 
 // Register `phoneList` component, along with its associated controller and template
@@ -11,4 +12,8 @@ angular.
         this.orderProp = 'age';
       }
     ]
+<<<<<<< HEAD
   });
+=======
+  });
+>>>>>>> ang-step-14

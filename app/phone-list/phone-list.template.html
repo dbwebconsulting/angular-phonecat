@@ -1,4 +1,5 @@
 <div class="container-fluid">
+<<<<<<< HEAD
   <div class="row">
     <div class="col-md-2">
       <!--Sidebar content-->
@@ -34,3 +35,41 @@
     </div>
   </div>
 </div>
+=======
+    <div class="row">
+        <div class="col-md-2">
+            <!-- sidebar content -->
+            
+            <p>
+                Search: 
+                <input ng-model="$ctrl.query" />
+            </p>
+            
+            <p>
+                sort by:
+                <select ng-model="$ctrl.orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                </select>
+            </p>
+            
+        </div>
+        <div class="col-md-10">
+            <!-- body content -->
+            
+            <ul class="phones">
+              <li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+                    class="thumbnail phone-list-item">
+                  <a href="#!/phones/{{phone.id}}" class="thumb">
+                    <img ng-src="{{phone.imageUrl}}" title="{{phone.name}}" /></a>
+                  <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
+                <p>{{phone.snippet}}</p>
+              </li>
+                <p>Total number of phones: {{$ctrl.phones.length}}</p>
+            </ul>
+            <p>Current value of the query: {{$ctrl.query}}</p>
+            <p>Current value of orderProp: {{$ctrl.orderProp}}</p>
+        </div>
+    </div>
+</div>
+>>>>>>> ang-step-14

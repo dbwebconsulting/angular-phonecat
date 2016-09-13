@@ -43,4 +43,4 @@ angular.
         if (wasCanceled) element.stop();
       };
     }
-  }); 
+  });

@@ -77,15 +77,6 @@ describe('PhoneCat Application', function() {
       expect(element(by.binding('$ctrl.phone.name')).getText()).toBe('Nexus S');
     });
 
-<<<<<<< HEAD
-    it('should display the first phone image as the main phone image', function() {
-      var mainImage = element(by.css('img.phone.selected'));
-
-      expect(mainImage.getAttribute('src')).toMatch(/img\/phones\/nexus-s.0.jpg/);
-    });
-
-    it('should swap the main image when clicking on a thumbnail image', function() {
-=======
     it('should display thumbnail images', function () {
       var imgCount = element.all(by.css('.phone-thumbs img'));
       expect(imgCount.count()).toBe(4);
@@ -98,7 +89,6 @@ describe('PhoneCat Application', function() {
     });
 
     it('should swap the main image when clicking on a thumbnail image', function () {
->>>>>>> ang-step-14
       var mainImage = element(by.css('img.phone.selected'));
       var thumbnails = element.all(by.css('.phone-thumbs img'));
 

@@ -12,8 +12,4 @@ angular.
         this.orderProp = 'age';
       }
     ]
-<<<<<<< HEAD
   });
-=======
-  });
->>>>>>> ang-step-14
